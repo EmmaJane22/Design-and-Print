@@ -1,39 +1,152 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Design and Print Website - Emma Scott
+## Milestone Project 4 - Full Stack Development
 
-Welcome,
+![mockup image](/documentation/mockup.jpg)
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Introduction
+Welcome to my Milestone Project 4.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+View the live project [here.](https:/ "View the live project here")
 
-## Codeanywhere Reminders
+___
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## Table of Contents
 
-`python3 -m http.server`
+1. [User Experience (UX)](#ux)
+    - [User Stories](#user-stories)
+        - [Target Audience](#target-audience)
+        - [First Time User Goals](#first-time-user-goals)
+        - [Frequent User Goals](#frequent-user-goals)
+    - [Design](#design)
+        - [Colour Scheme](#colour-scheme)
+        - [Typography](#typography)
+2. [Features](#features)
+    - [Wireframes](#wireframes)
+    - [Features](#features)
+    - [Future Features](#future-features)
+3. [Technologies](#technologies)
+    - [Languages](#languages)
+    - [Frameworks & Libraries](#frameworks-and-libraries)
+    - [Storage & Hosting](#storage-and-hosting)
+4. [Testing](#testing)
+5. [Deployment](#deployment)
+    - [Heroku](#heroku)
+6. [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+    - [Acknowledgements](#acknowledgements)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+___
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## 1. User Experience (UX)
 
-`http_server`
+## User Stories
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Target Audience
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### First Time User Goals
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+As a first time user, I want to be able :
+* 
 
-To log into the Heroku toolbelt CLI:
+### Frequent User Goals
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+As a returning user, I want to be able to:
+* 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Administrator Goals
 
----
+As an administrator of the site, I want to be able to:
+* 
 
-Happy coding!
+## Design
+### Colour Scheme
+
+### Typography
+
+[Back to top](#table-of-contents)
+___
+
+## 2. Features
+
+### Wireframes
+
+[Balsamiq](https://balsamiq.com/) was used to create wireframes of the design of the site for mobile phones, tablets and desktop devices.
+
+### Features
+
+#### Nav Bar
+
+#### Footer
+___
+
+### Pages
+
+The website consists of X pages that run from a base page:
+
+* pages list
+
+#### Page
+
+#### Page
+
+#### Page
+
+#### 404 Error Page
+___
+
+### Future Features
+Ideas for future implementation include:
+
+ - 
+
+[Back to top](#table-of-contents)
+___
+
+## 3. Technologies
+
+### Languages
+
+*
+
+### Frameworks & Libraries
+
+* 
+
+### Storage & Hosting
+
+* 
+
+[Back to top](#table-of-contents)
+___
+
+## 4. Testing
+
+A separate [TEST.md](TEST.md) file has been created for the documentation of testing.
+
+[Back to top](#table-of-contents)
+___
+
+## 5. Deployment
+### Heroku
+
+To deploy 
+
+### Cloning the Git Hub Repository
+
+[Back to top](#table-of-contents)
+___
+
+## 6. Credits
+### Content
+
+* 
+
+### Media
+
+### Acknowledgements
+
+* Thank yous
+
+[Back to top](#table-of-contents)
+___
