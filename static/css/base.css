@@ -1,0 +1,97 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/print_image_comp.png') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #101728;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    color: #101728;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+/* from https://gradientbuttons.colorion.co/?utm_content=cmp-true */
+.learn-more-button {
+    background-image: linear-gradient(to right, #ff00cc 0%, #333399  51%, #ff00cc  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.learn-more-button:hover,
+.learn-more-button:active,
+.learn-more-button:focus {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-blue {
+    background: #101728;
+    color: #fff;
+}
+
+.btn-blue:hover,
+.btn-blue:active,
+.btn-blue:focus {
+    background: #1e2b4b;
+    color: #fff;
+}
+
+.text-blue {
+    color: #101728 !important;
+}
+
+.border-blue {
+    border: 1px solid #101728 !important;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* Fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
