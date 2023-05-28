@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/print_image_comp.png') no-repeat center center fixed;
+    background: url('/media/print_image_comp.png') no-repeat center center;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #101728;
@@ -41,7 +41,6 @@ body {
     color: white;
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
-    display: block;
 }
 
 .learn-more-button:hover,
@@ -70,6 +69,11 @@ body {
 
 .border-blue {
     border: 1px solid #101728 !important;
+}
+
+#product-categories {
+    background: #101728;
+    
 }
 
 /* -------------------------------- Media Queries */
