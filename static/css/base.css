@@ -73,7 +73,58 @@ body {
 
 #product-categories {
     background: #101728;
-    
+
+}
+
+/* --- Footer --- */
+
+.page-footer {
+    background-color: #fff;
+}
+
+.footer-copyright {
+    background: #101728;
+    color: #fff;
+    text-align: center;
+}
+
+a.social-media {
+    text-decoration: none;
+}
+
+.social-media-icon {
+    font-size: 2rem;
+    color: #101728;
+    padding: 10px 10px 10px 0px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.social-media-icon:hover,
+.contact-icon:hover {
+    color: #9640FB;
+    text-decoration: none;
+}
+
+.contact {
+    color: #101728 !important;
+}
+
+.contact-icon {
+    font-size: 1rem;
+    color: #101728;
+    padding: 8px;
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0;
 }
 
 /* -------------------------------- Media Queries */
