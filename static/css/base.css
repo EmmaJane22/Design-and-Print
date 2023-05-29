@@ -31,6 +31,11 @@ body {
     color: #101728;
 }
 
+.shipping-font {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
 .main-logo-link {
     width: fit-content;
 }
@@ -75,6 +80,14 @@ body {
 
 .border-blue {
     border: 1px solid #101728 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #000 !important;
 }
 
 #product-categories {
