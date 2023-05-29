@@ -1,0 +1,572 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "MP40001",
+        "name": "Business Brochure Office News",
+        "description": "A classic brochure which can be edited to include your specific office news. The design is modern and bright.",
+        "price": 1.99,
+        "category": 3,
+        "rating": 4,
+        "colour": "orange",
+        "feature": "brochure",
+        "image": "brochure_bright.jpg"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "MP40002",
+        "name": "Business Brochure Green",
+        "description": "A classic brochure which can be edited to include your specific office news. This has a green design.",
+        "price": 2.99,
+        "category": 3,
+        "rating": 3,
+        "colour": "green",
+        "feature": "brochure",
+        "image": "brochure_green.jpg"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+        "sku": "MP40003",
+        "name": "Business Brochure Yellow",
+        "description": "A classic brochure which can be edited to include your specific office news. This has a yellow design.",
+        "price": 1.59,
+        "category": 3,
+        "rating": 5,
+        "colour": "yellow",
+        "feature": "brochure",
+        "image": "brochure_yellow.jpg"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+        "sku": "MP40004",
+        "name": "Business Card Black and Red",
+        "description": "A classic business card which can be edited to include your specific contact details. This has a black and red design.",
+        "price": 2.59,
+        "category": 1,
+        "rating": 4,
+        "colour": "black",
+        "feature": "card",
+        "image": "business_card_black_red.jpg"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+        "sku": "MP40005",
+        "name": "Business Card Black",
+        "description": "A classic business card which can be edited to include your specific contact details. This has a black design.",
+        "price": 2.99,
+        "category": 1,
+        "rating": 2,
+        "colour": "black",
+        "feature": "card",
+        "image": "business_card_black.jpg"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+        "sku": "MP40006",
+        "name": "Business Card Red Swirl",
+        "description": "A classic business card which can be edited to include your specific contact details. This has a red swirl design.",
+        "price": 3.99,
+        "category": 1,
+        "rating": 3,
+        "colour": "red",
+        "feature": "card",
+        "image": "business_card_red_swirl.jpg"
+      }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40007",
+      "name": "Business Card Red",
+      "description": "A classic business card which can be edited to include your specific contact details. This has a red design.",
+      "price": 2.59,
+      "category": 1,
+      "rating": 4,
+      "colour": "red",
+      "feature": "card",
+      "image": "business_card_red.jpg"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40008",
+      "name": "Business Card yellow",
+      "description": "A classic business card which can be edited to include your specific contact details. This has a yellow design.",
+      "price": 1.99,
+      "category": 1,
+      "rating": 2,
+      "colour": "yellow",
+      "feature": "card",
+      "image": "business_card_yellow.jpg"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40009",
+      "name": "Calendar Brights",
+      "description": "A calendar which can be edited to your needs. This has a bright design.",
+      "price": 5.99,
+      "category": 1,
+      "rating": 5,
+      "colour": "multi",
+      "feature": "calendar",
+      "image": "calendar_brights.jpg"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40010",
+      "name": "Calendar Coffee",
+      "description": "A calendar which can be edited to your needs. This has a coffee image.",
+      "price": 5.99,
+      "category": 1,
+      "rating": 4,
+      "colour": "brown",
+      "feature": "calendar",
+      "image": "calendar_coffee.jpg"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40011",
+      "name": "Calendar Prink",
+      "description": "A calendar which can be edited to your needs. This has a pink design.",
+      "price": 5.99,
+      "category": 1,
+      "rating": 3,
+      "colour": "pink",
+      "feature": "calendar",
+      "image": "calendar_pink.jpg"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40012",
+      "name": "Calendar Plants",
+      "description": "A calendar which can be edited to your needs. This has a plant image.",
+      "price": 5.99,
+      "category": 1,
+      "rating": 3,
+      "colour": "green",
+      "feature": "calendar",
+      "image": "calendar_plants.jpg"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40013",
+      "name": "Calendar Yellow",
+      "description": "A calendar which can be edited to your needs. This has a yellow theme.",
+      "price": 4.99,
+      "category": 5,
+      "rating": 2,
+      "colour": "yellow",
+      "feature": "calendar",
+      "image": "calendar_yellow.jpg"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40014",
+      "name": "Flyer 1",
+      "description": "A flyer which can be edited to your needs. This has a blue theme.",
+      "price": 2.99,
+      "category": 3,
+      "rating": 4,
+      "colour": "blue",
+      "feature": "flyer",
+      "image": "flyer_blue.jpg"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40015",
+      "name": "Flyer 2",
+      "description": "A flyer which can be edited to your needs. This has a green theme.",
+      "price": 1.99,
+      "category": 5,
+      "rating": 2,
+      "colour": "green",
+      "feature": "flyer",
+      "image": "flyer_green.jpg"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40016",
+      "name": "Flyer 3",
+      "description": "A flyer which can be edited to your needs. This has a pink theme.",
+      "price": 2.99,
+      "category": 3,
+      "rating": 4,
+      "colour": "pink",
+      "feature": "flyer",
+      "image": "flyer_pink.jpg"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40017",
+      "name": "Lined Notepad",
+      "description": "Every office desk needs a notepad. Our notepads can be tailored to display your company details. This has lined paper.",
+      "price": 5.99,
+      "category": 1,
+      "rating": 4,
+      "colour": "white",
+      "feature": "notepad",
+      "image": "notepad_lined.jpg"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40018",
+      "name": "Plain Notepad",
+      "description": "Every office desk needs a notepad. Our notepads can be tailored to display your company details. This has plain paper.",
+      "price": 3.99,
+      "category": 1,
+      "rating": 2,
+      "colour": "white",
+      "feature": "notepad",
+      "image": "notepad_plain.jpg"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40019",
+      "name": "Wide Lined Notepad",
+      "description": "Every office desk needs a notepad. Our notepads can be tailored to display your company details. This has wide lined paper.",
+      "price": 5.99,
+      "category": 1,
+      "rating": 4,
+      "colour": "white",
+      "feature": "notepad",
+      "image": "notepad_wide_lined.jpg"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40020",
+      "name": "Checked Notepad",
+      "description": "Every office desk needs a notepad. Our notepads can be tailored to display your company details. This has yellow checked paper.",
+      "price": 5.99,
+      "category": 1,
+      "rating": 3,
+      "colour": "yellow",
+      "feature": "notepad",
+      "image": "notepad_yellow_checked.jpg"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40021",
+      "name": "Yellow Lined Notepad",
+      "description": "Every office desk needs a notepad. Our notepads can be tailored to display your company details. This has yellow lined paper.",
+      "price": 4.59,
+      "category": 1,
+      "rating": 3,
+      "colour": "yellow",
+      "feature": "notepad",
+      "image": "notepad_yellow_lined.jpg"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40022",
+      "name": "Yellow Plain Notepad",
+      "description": "Every office desk needs a notepad. Our notepads can be tailored to display your company details. This has yellow plain paper.",
+      "price": 2.99,
+      "category": 1,
+      "rating": 2,
+      "colour": "yellow",
+      "feature": "notepad",
+      "image": "notepad_yellow_plain.jpg"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40023",
+      "name": "Poster 1",
+      "description": "If you need to promote your business, our posters are for you. They can be designed to display your company details. This poster has a blue theme.",
+      "price": 8.99,
+      "category": 3,
+      "rating": 5,
+      "colour": "blue",
+      "feature": "poster",
+      "image": "poster_blue.jpg"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40024",
+      "name": "Poster 2",
+      "description": "If you need to promote your business, our posters are for you. They can be designed to display your company details. This poster has a technical theme.",
+      "price": 8.99,
+      "category": 3,
+      "rating": 4,
+      "colour": "blue",
+      "feature": "poster",
+      "image": "poster_hand.jpg"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40025",
+      "name": "Poster 3",
+      "description": "If you need to promote your business, our posters are for you. They can be designed to display your company details. This poster has a technical theme.",
+      "price": 7.99,
+      "category": 3,
+      "rating": 4,
+      "colour": "blue",
+      "feature": "poster",
+      "image": "poster_tech.jpg"
+    }
+  },
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40026",
+      "name": "Poster 4",
+      "description": "If you need to promote your business, our posters are for you. They can be designed to display your company details. This poster has a yellow theme.",
+      "price": 8.29,
+      "category": 3,
+      "rating": 3,
+      "colour": "yellow",
+      "feature": "poster",
+      "image": "poster_yellow.jpg"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40027",
+      "name": "Roll of Round Handmade Stickers",
+      "description": "Everyone loves a sticker. This one is circular and comes on a roll. It features a handmade design.",
+      "price": 7.29,
+      "category": 2,
+      "rating": 2,
+      "colour": "beige",
+      "feature": "roll",
+      "image": "sticker_circle_handmade.jpg"
+    }
+  },
+  {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40027",
+      "name": "Sheet of Round Handmade Stickers",
+      "description": "Everyone loves a sticker. This one is circular and comes on a sheet. It features a handmade design.",
+      "price": 9.29,
+      "category": 2,
+      "rating": 4,
+      "colour": "beige",
+      "feature": "sheet",
+      "image": "sticker_circle_handmade.jpg"
+    }
+  },
+  {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40029",
+      "name": "Roll of Round Thankyou Stickers",
+      "description": "Everyone loves a sticker. This one is circular and comes on a roll. It features a heart design.",
+      "price": 7.29,
+      "category": 2,
+      "rating": 2,
+      "colour": "white",
+      "feature": "roll",
+      "image": "sticker_circle_thankyou.jpg"
+    }
+  },
+  {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40030",
+      "name": "Sheet of Round Thank You Stickers",
+      "description": "Everyone loves a sticker. This one is circular and comes on a sheet. It features a heart design.",
+      "price": 9.29,
+      "category": 2,
+      "rating": 4,
+      "colour": "white",
+      "feature": "sheet",
+      "image": "sticker_circle_thankyou.jpg"
+    }
+  },
+  {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40031",
+      "name": "Roll of Rectangular Company Stickers",
+      "description": "Everyone loves a sticker. This one is rectangular and comes on a roll. It features a floral design.",
+      "price": 7.39,
+      "category": 2,
+      "rating": 3,
+      "colour": "pink",
+      "feature": "roll",
+      "image": "sticker_rectangle_flower.jpg"
+    }
+  },
+  {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40032",
+      "name": "Sheet of Rectangular Company Stickers",
+      "description": "Everyone loves a sticker. This one is rectangular and comes on a sheet. It features a floral design.",
+      "price": 9.39,
+      "category": 2,
+      "rating": 4,
+      "colour": "pink",
+      "feature": "sheet",
+      "image": "sticker_rectangle_flower.jpg"
+    }
+  },
+  {
+    "pk": 33,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40033",
+      "name": "Roll of Rectangular Product Stickers",
+      "description": "Everyone loves a sticker. This one is rectangular and comes on a roll. It features a rose design.",
+      "price": 7.39,
+      "category": 2,
+      "rating": 3,
+      "colour": "pink",
+      "feature": "roll",
+      "image": "sticker_rectangle_rose.jpg"
+    }
+  },
+  {
+    "pk": 34,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40034",
+      "name": "Sheet of Rectangular Product Stickers",
+      "description": "Everyone loves a sticker. This one is rectangular and comes on a sheet. It features a rose design.",
+      "price": 7.59,
+      "category": 2,
+      "rating": 4,
+      "colour": "pink",
+      "feature": "sheet",
+      "image": "sticker_rectangle_rose.jpg"
+    }
+  },
+  {
+    "pk": 35,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40035",
+      "name": "Roll of Rectangular Thank You Stickers",
+      "description": "Everyone loves a sticker. This one is rectangular and comes on a roll. It features a Thank You message.",
+      "price": 6.39,
+      "category": 2,
+      "rating": 3,
+      "colour": "beige",
+      "feature": "roll",
+      "image": "sticker_rectangle_thankyou.jpg"
+    }
+  },
+  {
+    "pk": 36,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40036",
+      "name": "Sheet of Rectangular Thank You Stickers",
+      "description": "Everyone loves a sticker. This one is rectangular and comes on a sheet. It features a Thank You message.",
+      "price": 8.49,
+      "category": 2,
+      "rating": 5,
+      "colour": "beige",
+      "feature": "sheet",
+      "image": "sticker_rectangle_thankyou.jpg"
+    }
+  },
+  {
+    "pk": 37,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40037",
+      "name": "Sheet of round blue Company Stickers",
+      "description": "Everyone loves a sticker. This one is round and comes on a sheet. It can feature your company details.",
+      "price": 9.49,
+      "category": 2,
+      "rating": 5,
+      "colour": "blue",
+      "feature": "sheet",
+      "image": "sticker_round_blue.jpg"
+    }
+  },
+  {
+    "pk": 38,
+    "model": "products.product",
+    "fields": {
+      "sku": "MP40038",
+      "name": "Roll of round blue Company Stickers",
+      "description": "Everyone loves a sticker. This one is round and comes on a roll. It can feature your company details.",
+      "price": 8.59,
+      "category": 2,
+      "rating": 4,
+      "colour": "blue",
+      "feature": "roll",
+      "image": "sticker_round_blue.jpg"
+    }
+  }
+]
