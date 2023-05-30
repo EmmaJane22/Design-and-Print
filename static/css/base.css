@@ -195,6 +195,17 @@ footer li {
     }
 }
 
+/* pad the top when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh -116px);
+    }
+}
+
 /* X-Small, SmartPhone View - For screen size smaller than 492px */
 @media screen and (max-width: 492px) {
     .display-4.logo-font.text-white {
