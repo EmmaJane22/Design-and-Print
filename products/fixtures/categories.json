@@ -3,28 +3,68 @@
       "pk": 1,
       "model": "products.category",
       "fields": {
-        "name": "stationery",
-        "friendly_name": "Stationery"
+        "name": "business_cards",
+        "friendly_name": "Business Cards"
       }
     },
     {
       "pk": 2,
       "model": "products.category",
       "fields": {
-        "name": "stickers",
-        "friendly_name": "Stickers"
+        "name": "notepads",
+        "friendly_name": "Notepads"
       }
     },
     {
       "pk": 3,
       "model": "products.category",
       "fields": {
-        "name": "promotional",
-        "friendly_name": "Promotional"
+        "name": "calendars",
+        "friendly_name": "Calendars"
       }
     },
     {
       "pk": 4,
+      "model": "products.category",
+      "fields": {
+        "name": "sticker_sheets",
+        "friendly_name": "Sticker Sheets"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.category",
+      "fields": {
+        "name": "sticker_rolls",
+        "friendly_name": "Sticker Rolls"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.category",
+      "fields": {
+        "name": "flyers",
+        "friendly_name": "Flyers"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.category",
+      "fields": {
+        "name": "posters",
+        "friendly_name": "Posters"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.category",
+      "fields": {
+        "name": "brochures",
+        "friendly_name": "Brochures"
+      }
+    },
+    {
+      "pk": 9,
       "model": "products.category",
       "fields": {
         "name": "deals",
@@ -32,7 +72,7 @@
       }
     },
     {
-      "pk": 5,
+      "pk": 10,
       "model": "products.category",
       "fields": {
         "name": "clearance",
@@ -40,7 +80,7 @@
       }
     },
     {
-      "pk": 6,
+      "pk": 11,
       "model": "products.category",
       "fields": {
         "name": "new_arrivals",
