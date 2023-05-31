@@ -18,10 +18,10 @@
                 Stationery
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="stationery-link">
-                <a href="{% url 'products' %}?category=" class="dropdown-item">Business Cards</a>
-                <a href="" class="dropdown-item">Notepads</a>
-                <a href="" class="dropdown-item">Calendars</a>
-                <a href="" class="dropdown-item">All Stationery</a>
+                <a href="{% url 'products' %}?category=business_cards" class="dropdown-item">Business Cards</a>
+                <a href="{% url 'products' %}?category=notepads" class="dropdown-item">Notepads</a>
+                <a href="{% url 'products' %}?category=calendars" class="dropdown-item">Calendars</a>
+                <a href="{% url 'products' %}?category=business_cards,notepads,calendars" class="dropdown-item">All Stationery</a>
             </div>
         </li>
 
@@ -31,10 +31,22 @@
                 Promotional
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="promotional-link">
-                <a href="" class="dropdown-item">Flyers</a>
-                <a href="" class="dropdown-item">Posters</a>
-                <a href="" class="dropdown-item">Booklets</a>
-                <a href="" class="dropdown-item">All Promotional</a>
+                <a href="{% url 'products' %}?category=flyers" class="dropdown-item">Flyers</a>
+                <a href="{% url 'products' %}?category=posters" class="dropdown-item">Posters</a>
+                <a href="{% url 'products' %}?category=brochures" class="dropdown-item">Brochures</a>
+                <a href="{% url 'products' %}?category=flyers,posters,brochures" class="dropdown-item">All Promotional</a>
+            </div>
+        </li>
+
+        <!--- Stickers menu --->
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-blue mr-5" href="#" id="stickers-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Stickers
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="stickers-link">
+                <a href="{% url 'products' %}?category=sticker_sheets" class="dropdown-item">Sticker Sheets</a>
+                <a href="{% url 'products' %}?category=sticker_rolls" class="dropdown-item">Sticker Rolls</a>
+                <a href="{% url 'products' %}?category=sticker_sheets,sticker_rolls" class="dropdown-item">All Stickers</a>
             </div>
         </li>
 
@@ -44,10 +56,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
