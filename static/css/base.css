@@ -74,6 +74,10 @@ body {
     color: #fff;
 }
 
+.text-black {
+    color: #000 !important;
+}
+
 .text-blue {
     color: #101728 !important;
 }
@@ -97,6 +101,11 @@ body {
 
 #popular-products {
     background: #fff;
+}
+
+a.category-badge > span.badge:hover {
+    background: #101728 !important;
+    color: #fff !important;
 }
 
 /* --- Footer --- */
