@@ -66,7 +66,7 @@ def checkout(request):
     else:
         bag = request.session.get('bag', {})
         if not bag:
-            messages.error(erquest, "Your bag is empty!")
+            messages.error(request, "Your bag is empty!")
             return redirect(reverse('products'))
 
         current_bag = bag_contents(request)
