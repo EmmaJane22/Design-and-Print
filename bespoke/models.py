@@ -13,4 +13,4 @@ class BespokeOrder(models.Model):
     accept_quote = models.BooleanField(default=False, null=True, blank=True)
 
     def __str__(self):
-        return self.name
+        return self.title
