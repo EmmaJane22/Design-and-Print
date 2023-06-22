@@ -11,6 +11,7 @@ class BespokeAdmin(admin.ModelAdmin):
         'image',
         'quote',
         'accept_quote',
+        'bespoke_order_number',
     )
 
     ordering = ('title',)

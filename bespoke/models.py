@@ -4,6 +4,7 @@ from products.models import Category
 # Create your models here.
 
 class BespokeOrder(models.Model):
+    bespoke_order_number = models.CharField(max_length=32, null=True, editable=False)
     category = models.ForeignKey(Category, null=True, blank=True, on_delete=models.SET_NULL)
     title = models.CharField(max_length=254)
     description = models.TextField()
