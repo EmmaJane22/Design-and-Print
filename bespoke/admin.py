@@ -4,6 +4,7 @@ from .models import BespokeOrder
 # Register your models here.
 class BespokeAdmin(admin.ModelAdmin):
     list_display = (
+        'bespoke_order_number',
         'title',
         'category',
         'description',
@@ -11,7 +12,6 @@ class BespokeAdmin(admin.ModelAdmin):
         'image',
         'quote',
         'accept_quote',
-        'bespoke_order_number',
     )
 
     ordering = ('title',)
