@@ -5,6 +5,7 @@ from .models import BespokeOrder
 class BespokeAdmin(admin.ModelAdmin):
     list_display = (
         'bespoke_order_number',
+        'created_date',
         'title',
         'category',
         'description',
