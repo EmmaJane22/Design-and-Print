@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
+import dj_database_url
 
 from pathlib import Path
 
@@ -125,8 +126,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-}
+ }
 
+#DATABASES = {
+#    'default': dj_database_url.parse('postgres://vazsetrr:7iqc8Mq4ppn97LBW6KLEj0MEommxi3tg@surus.db.elephantsql.com/vazsetrr')
+#}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
