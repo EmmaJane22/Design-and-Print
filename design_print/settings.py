@@ -128,9 +128,6 @@ DATABASES = {
     }
  }
 
-#DATABASES = {
-#    'default': dj_database_url.parse('postgres://vazsetrr:7iqc8Mq4ppn97LBW6KLEj0MEommxi3tg@surus.db.elephantsql.com/vazsetrr')
-#}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
