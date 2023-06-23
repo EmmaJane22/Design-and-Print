@@ -3,10 +3,13 @@ import uuid
 from django.db import models
 from products.models import Category
 from django.conf import settings
+from profiles.models import UserProfile
 
 # Create your models here.
 
 class BespokeOrder(models.Model):
+    user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
+                                     null=True, blank=True, related_name='bespoke_orders')
     bespoke_order_number = models.CharField(max_length=32, null=True, editable=False)
     category = models.ForeignKey(Category, null=True, blank=True, on_delete=models.SET_NULL)
     title = models.CharField(max_length=254)
@@ -15,6 +18,7 @@ class BespokeOrder(models.Model):
     image = models.ImageField(null=True, blank=True)
     quote = models.DecimalField(max_digits=10, decimal_places=2, null=True, default=0)
     accept_quote = models.BooleanField(default=False, null=True, blank=True)
+    created_date = models.DateTimeField(auto_now_add=True)
 
     def _generate_bespoke_order_number(self):
         """
