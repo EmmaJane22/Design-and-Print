@@ -3,7 +3,9 @@ from django.contrib import messages
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
 
+from .models import UserProfile
 from .models import Review
+from .forms import ReviewForm
 
 def all_reviews(request):
     """ View to return all reviews in date order """
@@ -30,3 +32,31 @@ def delete_review(request, review_id):
     messages.success(request, f'{review.title} deleted')
 
     return redirect(reverse('reviews'))
+
+@login_required
+def add_review(request):
+    """ Create review """
+
+    profile = get_object_or_404(UserProfile, user=request.user)
+
+    if request.method == "POST":
+        
+        form = ReviewForm(request.POST, request.FILES)
+        if form.is_valid():
+            review = form.save()
+            review.user_profile = profile
+            review.save()
+
+            messages.success(request, 'Review  added successfully')
+            return redirect(reverse('reviews'))
+        else:
+            messages.error(request, 'Failed to add review order.')
+    else:
+        form = ReviewForm()
+
+    template = 'reviews/add_review.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)

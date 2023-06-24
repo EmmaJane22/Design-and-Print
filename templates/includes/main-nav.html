@@ -74,5 +74,16 @@
                 <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
+
+        <!--- Reviews menu --->
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-blue mr-5" href="#" id="reviews-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Reviews
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="reviews-link">
+                <a href="{% url 'add_review' %}" class="dropdown-item">Add Review</a>
+                <a href="{% url 'reviews' %}" class="dropdown-item">View Reviews</a>
+            </div>
+        </li>
     </ul>
 </div>
