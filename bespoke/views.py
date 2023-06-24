@@ -26,7 +26,15 @@ def bespoke_orders(request):
 
 @login_required
 def bespoke_order_detail(request, bespoke_order_id):
-    return render(request, 'bespoke/bespoke_orders.html', context)
+    """ View to show bespoke order details """
+
+    bespoke_order = get_object_or_404(BespokeOrder, pk=bespoke_order_id)
+
+    context = {
+        'bespoke_order': bespoke_order,
+    }
+
+    return render(request, 'bespoke/bespoke_order_detail.html', context)
 
 @login_required
 def add_bespoke_order(request):

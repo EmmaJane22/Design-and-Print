@@ -41,7 +41,7 @@
                                     {% for bespoke_order in bespoke_orders %}
                                         <tr>
                                             <td>
-                                                <a href="{% url 'bespoke_order_detail' bespoke_order.bespoke_order_number %}"
+                                                <a href="{% url 'bespoke_order_detail' bespoke_order.id %}"
                                                 title="{{ bespoke_order.bespoke_order_number }}">
                                                     {{ bespoke_order.bespoke_order_number|truncatechars:6 }}
                                             </a>
@@ -53,13 +53,7 @@
                                             <td>{{ bespoke_order.accept_quote }}</td>
                                             <td>
                                                 <small class="ml-3">
-                                                    {% if request.user.is_superuser %}
-                                                        <a href="{% url 'quote_bespoke_order' bespoke_order.bespoke_order_number %}">Quote</a>
-                                                    {% endif %}
-                                                    {% if not request.user.is_superuser %}
-                                                        <a href="{% url 'accept_bespoke_order' bespoke_order.bespoke_order_number %}">Accept</a>
-                                                        <a class="text-danger" href="{% url 'delete_bespoke_order' bespoke_order.bespoke_order_number %}">Delete</a>
-                                                    {% endif %}
+                                                    
                                                 </small>
                                             </td>
                                         </tr>
