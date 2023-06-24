@@ -18,6 +18,10 @@
             <a class="logo-font font-weight-bold nav-link text-blue mr-5" href="#" id="bespoke-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Bespoke
             </a>
+            <div class="dropdown-menu border-0" aria-labelledby="bespoke-link">
+                <a href="{% url 'add_bespoke_order' %}" class="dropdown-item">Add Order</a>
+                <a href="{% url 'bespoke' %}" class="dropdown-item">View Orders</a>
+            </div>
         </li>
 
         <!--- Stationery menu --->
