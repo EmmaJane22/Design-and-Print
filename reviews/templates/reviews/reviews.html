@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <hr>
+                <h2 class="logo-font mb-4">Customer Reviews</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-container col-10 offset-1">
+                <div class="row">
+                    <div class="col">
+                        {% for review in reviews %}
+                            <div class="review-tile">
+                                <p><strong>Title:</strong> {{ review.title }}</p>
+                                <p><strong>Rating:</strong> {{ review.rating }} / 5</p>
+                                <p><strong>Review:</strong>
+                                    <br/>
+                                    {{ review.review_body }}
+                                </p>
+                                <p><strong>Reviewed by:</strong> {{ review.user_profile.user }}</p>
+                                <p><strong>Date reviewed:</strong> {{ review.created_on }}</p>
+                                <hr>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
