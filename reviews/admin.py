@@ -12,4 +12,4 @@ class ReviewAdmin(admin.ModelAdmin):
         'created_on',
     )
 
-admin.site.register(Review)
+admin.site.register(Review, ReviewAdmin)
