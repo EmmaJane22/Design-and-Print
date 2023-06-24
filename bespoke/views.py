@@ -15,7 +15,7 @@ def bespoke_orders(request):
         bespoke_orders = BespokeOrder.objects.order_by('created_date')
     else:
         profile = get_object_or_404(UserProfile, user=request.user)
-        bespoke_orders = profile.bespoke_orders.order_by('created_date')
+        bespoke_orders = profile.bespoke_orders.all() #order_by('created_date')
     
     context = {
         'bespoke_orders': bespoke_orders
@@ -39,11 +39,16 @@ def bespoke_order_detail(request, bespoke_order_id):
 @login_required
 def add_bespoke_order(request):
     """ Create bespoke order """
+
+    profile = get_object_or_404(UserProfile, user=request.user)
+
     if request.method == "POST":
         
         form = BespokeOrderForm(request.POST, request.FILES)
         if form.is_valid():
             bespoke_order = form.save()
+            bespoke_order.user_profile = profile
+
             messages.success(request, 'Bespoke order added successfully')
             return redirect(reverse('bespoke')) #, args=[bespoke_order.bespoke_order_number]))
         else:
@@ -111,3 +116,13 @@ def accept_bespoke_order(request, bespoke_order_id):
     }
 
     return render(request, template, context)
+
+@login_required
+def delete_bespoke_order(request, bespoke_order_id):
+    """ Allow user to delete bespoke order """
+
+    bespoke_order = get_object_or_404(BespokeOrder, pk=bespoke_order_id)
+    bespoke_order.delete()
+    messages.success(request, f'{bespoke_order.title} deleted')
+
+    return redirect(reverse('bespoke'))
