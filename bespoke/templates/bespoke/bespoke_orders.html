@@ -53,7 +53,9 @@
                                             <td>{{ bespoke_order.accept_quote }}</td>
                                             <td>
                                                 <small class="ml-3">
-                                                    
+                                                    {% if request.user.is_superuser %}
+                                                        <a href="{% url 'quote_bespoke_order' bespoke_order.id %}">Quote</a>
+                                                    {% endif %}
                                                 </small>
                                             </td>
                                         </tr>

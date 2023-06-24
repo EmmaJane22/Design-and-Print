@@ -17,10 +17,6 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="product-details-container mb-5 mt-md-5">
 
-                        <small class="ml-3">
-                            
-                        </small>
-
                         <p class="mb-0">{{ bespoke_order.title }}</p>
                         
                         {% if bespoke_order.category %}
@@ -33,6 +29,11 @@
                         <p class="lead mb-0 text-left font-weight-bold">£{{ bespoke_order.quote }}</p>
                         <p class="lead mb-0 text-left font-weight-bold">{{ bespoke_order.accept_quote }}</p>
 
+                        <small class="ml-3">
+                            {% if request.user.is_superuser %}
+                                <a href="{% url 'quote_bespoke_order' bespoke_order.id %}">Provide Order Quote</a>
+                            {% endif %}
+                        </small>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
