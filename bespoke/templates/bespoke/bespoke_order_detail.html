@@ -33,6 +33,9 @@
                             {% if request.user.is_superuser %}
                                 <a href="{% url 'quote_bespoke_order' bespoke_order.id %}">Provide Order Quote</a>
                             {% endif %}
+                            {% if not request.user.is_superuser %}
+                                <a class="text-danger" href="{% url 'delete_bespoke_order' bespoke_order.id %}">Delete</a>
+                            {% endif %}
                         </small>
                     </div>
                 </div>

@@ -48,6 +48,7 @@ def add_bespoke_order(request):
         if form.is_valid():
             bespoke_order = form.save()
             bespoke_order.user_profile = profile
+            bespoke_order.save()
 
             messages.success(request, 'Bespoke order added successfully')
             return redirect(reverse('bespoke')) #, args=[bespoke_order.bespoke_order_number]))
@@ -102,7 +103,7 @@ def accept_bespoke_order(request, bespoke_order_id):
         if form.is_valid():
             form.save()
             messages.success(request, 'Quote accepted!')
-            return redirect(reverse('bespoke_order_detail', args=[bespoke_order_id]))
+            return redirect(reverse('bespoke'))
         else:
             messages.error(request, 'Failed to update bespoke order. Check the form is valid.')
     else:

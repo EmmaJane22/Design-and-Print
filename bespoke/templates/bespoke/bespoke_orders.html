@@ -59,8 +59,10 @@
                                                         <a href="{% url 'quote_bespoke_order' bespoke_order.id %}">Quote</a>
                                                     {% endif %}
                                                     {% if not request.user.is_superuser %}
-                                                        <a href="{% url 'accept_bespoke_order' bespoke_order.id %}">Accept</a>
-                                                        <a class="text-danger" href="{% url 'delete_bespoke_order' bespoke_order.id %}">Delete</a>
+                                                        {% if bespoke_order.quote != 0.00 and bespoke_order.accept_quote == False %}
+                                                            <a href="{% url 'accept_bespoke_order' bespoke_order.id %}">Accept</a>
+                                                            <a class="text-danger" href="{% url 'delete_bespoke_order' bespoke_order.id %}">Delete</a>
+                                                        {% endif %}
                                                     {% endif %}
                                                 </small>
                                             </td>
