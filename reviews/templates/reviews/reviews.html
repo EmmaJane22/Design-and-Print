@@ -33,6 +33,11 @@
                                 </p>
                                 <p><strong>Reviewed by:</strong> {{ review.user_profile.user }}</p>
                                 <p><strong>Date reviewed:</strong> {{ review.created_on }}</p>
+                                <small class="ml-3">
+                                    {% if request.user.is_superuser %}
+                                        <a class="text-danger" href="{% url 'delete_review' review.id %}">Delete</a>
+                                    {% endif %}
+                                </small>
                                 <hr>
                             </div>
                         {% endfor %}
