@@ -378,8 +378,8 @@ footer li {
 /* Tablet View - For screen size smaller than 900px */
 @media screen and (max-width: 900px) {
     body {
-        background: url('/media/small_print_image.png') no-repeat center center;
-        background-size: cover;
+        /*background: url('/media/small_print_image.png') no-repeat center center;
+        background-size: cover;*/
         height: calc(100vh - 164px);
         color: #101728;
         font-family: 'Raleway', sans-serif;
@@ -393,7 +393,7 @@ footer li {
     }
 
     body {
-        height: calc(100vh -116px);
+        height: calc(100vh - 116px);
     }
 }
 
