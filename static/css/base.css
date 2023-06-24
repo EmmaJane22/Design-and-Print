@@ -395,10 +395,7 @@ footer li {
     body {
         height: calc(100vh - 116px);
     }
-}
 
-/* X-Small, SmartPhone View - For screen size smaller than 492px */
-@media screen and (max-width: 492px) {
     .display-4.logo-font.text-white {
         font-size: 2rem;
     }
@@ -416,7 +413,11 @@ footer li {
         font-size: 1rem;
     }
 
-    .learn-more-button {
+    .bespoke-button {
         font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
     }
 }
