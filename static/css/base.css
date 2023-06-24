@@ -41,7 +41,7 @@ body {
 }
 
 /* from https://gradientbuttons.colorion.co/?utm_content=cmp-true */
-.learn-more-button {
+.bespoke-button {
     background-image: linear-gradient(to right, #ff00cc 0%, #333399  51%, #ff00cc  100%);
     margin: 10px;
     padding: 15px 45px;
@@ -54,9 +54,9 @@ body {
     border-radius: 10px;
 }
 
-.learn-more-button:hover,
-.learn-more-button:active,
-.learn-more-button:focus {
+.bespoke-button:hover,
+.bespoke-button:active,
+.bespoke-button:focus {
     background-position: right center;
     color: #fff !important;
     text-decoration: none;
