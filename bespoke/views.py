@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 
 from .models import UserProfile
 from .models import BespokeOrder
-from .forms import BespokeOrderForm, BespokeOrderQuoteForm
+from .forms import BespokeOrderForm, BespokeOrderQuoteForm, BespokeOrderQuoteAcceptForm
 
 
 @login_required
@@ -80,6 +80,31 @@ def quote_bespoke_order(request, bespoke_order_id):
         messages.info(request, f'You are editing {bespoke_order.title}')
     
     template = 'bespoke/quote_bespoke_order.html'
+    context = {
+        'form': form,
+        'bespoke_order': bespoke_order,
+    }
+
+    return render(request, template, context)
+
+@login_required
+def accept_bespoke_order(request, bespoke_order_id):
+    """ Allow user to accept a quote for bespoke order """
+
+    bespoke_order = get_object_or_404(BespokeOrder, pk=bespoke_order_id)
+    if request.method == 'POST':
+        form = BespokeOrderQuoteAcceptForm(request.POST, instance=bespoke_order)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Quote accepted!')
+            return redirect(reverse('bespoke_order_detail', args=[bespoke_order_id]))
+        else:
+            messages.error(request, 'Failed to update bespoke order. Check the form is valid.')
+    else:
+        form = BespokeOrderQuoteAcceptForm(instance=bespoke_order)
+        messages.info(request, f'You are editing {bespoke_order.title}')
+    
+    template = 'bespoke/accept_bespoke_order.html'
     context = {
         'form': form,
         'bespoke_order': bespoke_order,
