@@ -7,6 +7,7 @@ from profiles.models import UserProfile
 
 # Create your models here.
 
+
 class BespokeOrder(models.Model):
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
                                      null=True, blank=True, related_name='bespoke_orders')
@@ -25,7 +26,7 @@ class BespokeOrder(models.Model):
         Generate a random unique order number using UUID
         """
         return uuid.uuid4().hex.upper()
-    
+
     def save(self, *args, **kwargs):
         """
         Override the original save method to set the order number

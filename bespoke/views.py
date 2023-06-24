@@ -5,7 +5,9 @@ from django.contrib.auth.decorators import login_required
 
 from .models import UserProfile
 from .models import BespokeOrder
-from .forms import BespokeOrderForm, BespokeOrderQuoteForm, BespokeOrderQuoteAcceptForm
+from .forms import (
+    BespokeOrderForm, BespokeOrderQuoteForm, BespokeOrderQuoteAcceptForm
+)
 
 
 @login_required
@@ -15,8 +17,8 @@ def bespoke_orders(request):
         bespoke_orders = BespokeOrder.objects.order_by('created_date')
     else:
         profile = get_object_or_404(UserProfile, user=request.user)
-        bespoke_orders = profile.bespoke_orders.all() #order_by('created_date')
-    
+        bespoke_orders = profile.bespoke_orders.all()
+
     context = {
         'bespoke_orders': bespoke_orders
     }
@@ -36,6 +38,7 @@ def bespoke_order_detail(request, bespoke_order_id):
 
     return render(request, 'bespoke/bespoke_order_detail.html', context)
 
+
 @login_required
 def add_bespoke_order(request):
     """ Create bespoke order """
@@ -43,7 +46,7 @@ def add_bespoke_order(request):
     profile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == "POST":
-        
+
         form = BespokeOrderForm(request.POST, request.FILES)
         if form.is_valid():
             bespoke_order = form.save()
@@ -51,7 +54,7 @@ def add_bespoke_order(request):
             bespoke_order.save()
 
             messages.success(request, 'Bespoke order added successfully')
-            return redirect(reverse('bespoke')) #, args=[bespoke_order.bespoke_order_number]))
+            return redirect(reverse('bespoke'))
         else:
             messages.error(request, 'Failed to add bespoke order.')
     else:
@@ -84,7 +87,7 @@ def quote_bespoke_order(request, bespoke_order_id):
     else:
         form = BespokeOrderQuoteForm(instance=bespoke_order)
         messages.info(request, f'You are editing {bespoke_order.title}')
-    
+
     template = 'bespoke/quote_bespoke_order.html'
     context = {
         'form': form,
@@ -92,6 +95,7 @@ def quote_bespoke_order(request, bespoke_order_id):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def accept_bespoke_order(request, bespoke_order_id):
@@ -109,7 +113,7 @@ def accept_bespoke_order(request, bespoke_order_id):
     else:
         form = BespokeOrderQuoteAcceptForm(instance=bespoke_order)
         messages.info(request, f'You are editing {bespoke_order.title}')
-    
+
     template = 'bespoke/accept_bespoke_order.html'
     context = {
         'form': form,
@@ -117,6 +121,7 @@ def accept_bespoke_order(request, bespoke_order_id):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_bespoke_order(request, bespoke_order_id):

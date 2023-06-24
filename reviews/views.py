@@ -1,4 +1,6 @@
-from django.shortcuts import render, reverse, redirect, get_object_or_404
+from django.shortcuts import (
+    render, reverse, redirect, get_object_or_404
+)
 from django.contrib import messages
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
@@ -7,17 +9,19 @@ from .models import UserProfile
 from .models import Review
 from .forms import ReviewForm
 
+
 def all_reviews(request):
     """ View to return all reviews in date order """
 
     reviews = Review.objects.all()
     reviews.order_by('created_on')
-    
+
     context = {
         'reviews': reviews
     }
 
     return render(request, 'reviews/reviews.html', context)
+
 
 @login_required
 def delete_review(request, review_id):
@@ -33,6 +37,7 @@ def delete_review(request, review_id):
 
     return redirect(reverse('reviews'))
 
+
 @login_required
 def add_review(request):
     """ Create review """
@@ -40,7 +45,7 @@ def add_review(request):
     profile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == "POST":
-        
+
         form = ReviewForm(request.POST, request.FILES)
         if form.is_valid():
             review = form.save()

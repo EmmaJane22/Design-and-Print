@@ -3,6 +3,7 @@ from .models import Review
 
 # Register your models here.
 
+
 class ReviewAdmin(admin.ModelAdmin):
     list_display = (
         'user_profile',
@@ -11,5 +12,6 @@ class ReviewAdmin(admin.ModelAdmin):
         'review_body',
         'created_on',
     )
+
 
 admin.site.register(Review, ReviewAdmin)
