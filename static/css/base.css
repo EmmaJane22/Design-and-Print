@@ -10,6 +10,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.header-bg {
+    background-color: #eee;
+}
+
 .hero-image {
     background: url('/media/print_image_comp.png') no-repeat center center;
     background-size: cover;
@@ -108,15 +112,6 @@ body {
     background: #000 !important;
 }
 
-#product-categories {
-    background: #101728;
-
-}
-
-#popular-products {
-    background: #fff;
-}
-
 a.category-badge > span.badge:hover {
     background: #101728 !important;
     color: #fff !important;
@@ -211,7 +206,7 @@ input[name='q']::placeholder {
 /* --- Footer --- */
 
 .page-footer {
-    background-color: #fff;
+    background-color: #eee;
 }
 
 .footer-copyright {
