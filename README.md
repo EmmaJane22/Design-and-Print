@@ -103,6 +103,7 @@ The main features for production are:
 | 14 | Customer | receive a quoted price for my bespoke order  | accept or decline the price before being commmited to purchasing it.  |
 | 15 | Customer | leave a review of the service  | provide feedback for the business.  |
 | 16 | Customer | read other customer's reviews  | in order to decide if I want to use the service.  |
+| 17 | Customer | view a 404 page if the path can't be found  | to allow me to go back to the site.  |
 
 | User Story | As a | I want to be able to ... | so that I can... |
 | :--- | :--- | :--- | :---|
@@ -300,6 +301,7 @@ ___
 | 14 | Customer | receive a quoted price for my bespoke order  | Accept or decline the price before being commmited to purchasing it.  | Yes |
 | 15 | Customer | leave a review of the service  | Write a review  |  Yes |
 | 16 | Customer | read other customer's reviews  | Select all reviews page and have all reviews display.  | Yes |
+| 17 | Customer | view a 404 page if the path can't be found  | changed the url path to see if a 404 page displays  | Yes |
 
 | User Story | As a | I want to be able to ... | Test carried out | Test Passed? |  
 | :--- | :--- | :--- | :---|
