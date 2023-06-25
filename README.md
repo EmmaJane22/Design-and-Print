@@ -4,9 +4,10 @@
 ![mockup image](/documentation/mockup.jpg)
 
 ## Introduction
-Welcome to my Milestone Project 4.
+Design and Print is a full stack e-commerce website built using Django, Python, HTML, CSS and JavaScript. The website utilises Stripe to process payments.
+This project was created as my fourth milestone project for my Level 5 Diploma in Web Application Development with Code Institute.
 
-View the live project [here.](https:/ "View the live project here")
+[View the live project here.](https:/ "View the live project here")
 
 ___
 
