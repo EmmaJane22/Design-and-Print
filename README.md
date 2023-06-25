@@ -113,7 +113,7 @@ The main features for production are:
 | 5 | Site Admin | manage bespoke requests | provide a custom service. |
 | 6 | Site Admin | manage customer reviews | remove inappropriate reviews. |
 
-#### **Database **
+#### Database
 
 The relational database ElephantSQL was used for this project. The following data models were used:
 * Category - stores information about the product categories.
