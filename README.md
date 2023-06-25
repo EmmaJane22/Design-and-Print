@@ -284,7 +284,7 @@ ___
 ## Testing
 ### Manual Testing
 | User Story | As a | I want to be able to ... |  Test carried out | Test Passed? |
-| :--- | :--- | :--- | :---|
+| :--- | :--- | :--- | :---| :---|
 | 1 | Customer | easily navigate the site | all links and buttons working | Yes |
 | 2 | Customer | register for an account | Multiple user accounts created. |  Yes |
 | 3 | Customer | receive an email after registration | Emsil received  |  Yes |
@@ -304,7 +304,7 @@ ___
 | 17 | Customer | view a 404 page if the path can't be found  | changed the url path to see if a 404 page displays  | Yes |
 
 | User Story | As a | I want to be able to ... | Test carried out | Test Passed? |  
-| :--- | :--- | :--- | :---|
+| :--- | :--- | :--- | :---| :---|
 | 1 | Site Admin | easily add products to the site | Add an additional product to the site |  Yes |
 | 2 | Site Admin | easily edit products | Edit the details in each input. |  Yes |
 | 3 | Site Admin | easily delete products | Delete several products |  Yes |
