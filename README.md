@@ -14,7 +14,7 @@ ___
 ## Table of Contents
 
 * [User Experience (UX)](#user-experience)
-    * [Strategy Plane](#strategy-plane)
+  * [Strategy Plane](#strategy-plane)
     * [Project Goals](#project-goals)
   * [Scope Plane](#scope-plane)
     * [Feature Planning](#feature-planning)

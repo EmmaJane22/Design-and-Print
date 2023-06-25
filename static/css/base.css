@@ -5,6 +5,9 @@ html {
 body {
     color: #101728;
     font-family: 'Raleway', sans-serif;
+    display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 
 .header-bg {
@@ -204,6 +207,7 @@ input[name='q']::placeholder {
 
 .page-footer {
     background-color: #eee;
+    margin-top: auto;
 }
 
 .footer-copyright {
