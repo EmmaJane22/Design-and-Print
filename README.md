@@ -13,14 +13,21 @@ ___
 
 ## Table of Contents
 
-1. [User Experience (UX)](#ux)
-    - [User Stories](#user-stories)
-        - [Target Audience](#target-audience)
-        - [First Time User Goals](#first-time-user-goals)
-        - [Frequent User Goals](#frequent-user-goals)
-    - [Design](#design)
-        - [Colour Scheme](#colour-scheme)
-        - [Typography](#typography)
+* [User Experience (UX)](#user-experience)
+    * [Strategy Plane](#strategy-plane)
+    * [Project Goals](#project-goals)
+  * [Scope Plane](#scope-plane)
+    * [Feature Planning](#feature-planning)
+  * [Structure Plane](#structure-plane)
+    * [User Stories](#user-stories)
+    * [Database Schema](#database-schema)
+  * [Skeleton Plane](#skeleton-plane)
+    * [Wireframes](#wireframes)
+  * [Surface Plane](#surface-plane)
+    * [Colour Scheme](#colour-scheme)
+    * [Typography](#typography)
+    * [Imagery](#imagery)
+    * [Base Mockup](#base-mockup)
 2. [Features](#features)
     - [Wireframes](#wireframes)
     - [Features](#features)
@@ -39,31 +46,69 @@ ___
 
 ___
 
-## 1. User Experience (UX)
+## User Experience
 
-## User Stories
+### Strategy Plane
 
-### Target Audience
+#### **Project Goals**
 
-### First Time User Goals
+Design and Print is a e-commerce site (for educational purposes only) that allows customers to order products to be printed, place bespoke orders for printing and for the site owners to run a print business. The timing of this project fortunately occured at the same time that I had a to prepare a presentation for a job interview where, by a happy co-incidence, I was required to provide a business solution for a print service! Hence, Design and Print was born! 
 
-As a first time user, I want to be able :
-* 
+### Scope Plane
 
-### Frequent User Goals
+#### **Feature Planning**
 
-As a returning user, I want to be able to:
-* 
+The main features for production are:
+* Home Page
+* Product page
+* Product search
+* Bag/Basket page
+* Checkout system
+* Payment system via Stripe
+* Sign In page
+* Sign Out page
+* Register page
+* Profile page
+* Product Management - Admin only
+* Bespoke Order page
+* Bespoke Quote page - Admin Only
+* Bespoke acceptance page
+* Submit Review page
+* View Reviews page
+* Review management - Admin Only
 
-### Administrator Goals
+### Structure Plane
 
-As an administrator of the site, I want to be able to:
-* 
+#### **User Stories**
 
-## Design
-### Colour Scheme
+| User Story | As a | I want to be able to ... | so that I can... |
+| :--- | :--- | :--- | :---|
+| 1 | Customer | easily navigate the site | find products easily and find the page that I want quickly. |
+| 2 | Customer | register for an account | have a personal account and view my profile. |
+| 3 | Customer | receive an email after registration | know my registration was successful.  |
+| 4 | Customer | login and logout of my account | access my personal information everytime I visit the site. |
+| 5 | Customer | view my profile page  | see my order history and edit my delivery information.  |
+| 6 | Customer | view all products on the site  | find the product I am interested in ordering and compare products. |
+| 7 | Customer | filter products by categories  | find the specific products I am interested in and compare products in order.  |
+| 8 | Customer | view detailed information about a product  | see the specific details of price, size, description and image.  |
+| 9 | Customer | view items in my basket  | see the items I want to purchase and the cost.  |
+| 10 | Customer | edit the quantity of items in my basket  | increase or decrease quantities.  |
+| 11 | Customer | enter my payment details easily  | purchase products with minimal fuss.  |
+| 12 | Customer | receive confirmation of my purchases  | track my orders and be assured the order has been processed.  |
+| 13 | Customer | place a unique, bespoke order  | purchase a product unique to me.  |
+| 14 | Customer | receive a quoted price for my bespoke order  | accept or decline the price before being commmited to purchasing it.  |
+| 15 | Customer | leave a review of the service  | provide feedback for the business.  |
+| 16 | Customer | read other customer's reviews  | in order to decide if I want to use the service.  |
 
-### Typography
+| User Story | As a | I want to be able to ... | so that I can... |
+| :--- | :--- | :--- | :---|
+| 1 | Site Admin | easily add products to the site | advertise my products quickly and easily. |
+| 2 | Site Admin | easily edit products | update my products quickly and easily. |
+| 3 | Site Admin | easily delete products | remove unwanted products quickly and easily. |
+| 4 | Site Admin | view the orders being made | assess the work that needs completing. |
+| 5 | Site Admin | manage bespoke requests | provide a custom service. |
+| 6 | Site Admin | manage customer reviews | remove inappropriate reviews. |
+
 
 [Back to top](#table-of-contents)
 ___
