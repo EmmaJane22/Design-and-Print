@@ -107,12 +107,12 @@ The main features for production are:
 
 | User Story | As a | I want to be able to ... | so that I can... |
 | :--- | :--- | :--- | :---|
-| 1 | Site Admin | easily add products to the site | advertise my products quickly and easily. |
-| 2 | Site Admin | easily edit products | update my products quickly and easily. |
-| 3 | Site Admin | easily delete products | remove unwanted products quickly and easily. |
-| 4 | Site Admin | view the orders being made | assess the work that needs completing. |
-| 5 | Site Admin | manage bespoke requests | provide a custom service. |
-| 6 | Site Admin | manage customer reviews | remove inappropriate reviews. |
+| 18 | Site Admin | easily add products to the site | advertise my products quickly and easily. |
+| 19 | Site Admin | easily edit products | update my products quickly and easily. |
+| 20 | Site Admin | easily delete products | remove unwanted products quickly and easily. |
+| 21 | Site Admin | view the orders being made | assess the work that needs completing. |
+| 22 | Site Admin | manage bespoke requests | provide a custom service. |
+| 23 | Site Admin | manage customer reviews | remove inappropriate reviews. |
 
 #### Database
 
@@ -283,6 +283,10 @@ ___
 
 ## Testing
 ### Manual Testing
+The following testing was carried out:
+
+* Customer Stories:
+
 | User Story | As a | I want to be able to ... |  Test carried out | Test Passed? |
 | :--- | :--- | :--- | :---| :---|
 | 1 | Customer | easily navigate the site | all links and buttons working | Yes |
@@ -303,14 +307,17 @@ ___
 | 16 | Customer | read other customer's reviews  | Select all reviews page and have all reviews display.  | Yes |
 | 17 | Customer | view a 404 page if the path can't be found  | changed the url path to see if a 404 page displays  | Yes |
 
+
+* Admin Stories:
+
 | User Story | As a | I want to be able to ... | Test carried out | Test Passed? |  
 | :--- | :--- | :--- | :---| :---|
-| 1 | Site Admin | easily add products to the site | Add an additional product to the site |  Yes |
-| 2 | Site Admin | easily edit products | Edit the details in each input. |  Yes |
-| 3 | Site Admin | easily delete products | Delete several products |  Yes |
-| 4 | Site Admin | view the orders being made | View all orders on one page. Click on each one for full details. |  Yes |
-| 5 | Site Admin | manage bespoke requests | View custom orders to provide a quoted price |  Yes |
-| 6 | Site Admin | manage customer reviews | Remove reviews by clicking on delete. |  Yes |
+| 18 | Site Admin | easily add products to the site | Add an additional product to the site |  Yes |
+| 19 | Site Admin | easily edit products | Edit the details in each input. |  Yes |
+| 20 | Site Admin | easily delete products | Delete several products |  Yes |
+| 21 | Site Admin | view the orders being made | View all orders on one page. Click on each one for full details. |  Yes |
+| 22 | Site Admin | manage bespoke requests | View custom orders to provide a quoted price |  Yes |
+| 23 | Site Admin | manage customer reviews | Remove reviews by clicking on delete. |  Yes |
 
 
 ### Validator Testing
@@ -343,25 +350,32 @@ I used Lighthouse in Chrome Dev Tools to run three typical reports on the websit
 * Mobile View
 
 Mobile Home page
+
 ![Mobile Home page](documentation/testing/mobile_home.jpg)
 
 Mobile Sign In page
+
 ![Mobile Sign In page](documentation/testing/mobile_sign_in.jpg)
 
 Mobile Products page
+
 ![Mobile products page](documentation/testing/mobile_products.jpg)
 
 
 * Desktop View
 
 Desktop Home page
+
 ![Desktop Home page](documentation/testing/desktop_home.jpg)
 
 Desktop Sign In page
+
 ![Desktop Sign In page](documentation/testing/desktop_sign_in.jpg)
 
 Desktop Products page
+
 ![Desktop products page](documentation/testing/desktop_products.jpg)
+
 
 There are a few improvments to be made on the performance on mobile and desktop views which would need to be addressed at a later date.
 
@@ -396,11 +410,18 @@ ___
 ## Credits
 
 ### Code Used
+
+* A lot of the code was taken from the Boutique Ado walkthrough project on Code Institute.
 * The code for the gradient 'Bespoke' button on the Home page came from https://gradientbuttons.colorion.co/?utm_content=cmp-true
- 
-### Media
+* The code for fixing the footer bug was adapted from https://dev.to/nehalahmadkhan how-to-make-footer-stick-to-bottom-of-web-page-3i14
+
+### Tools
+
+* Database schema created with DbSchema: Database Diagram Designer & Management Tool.
 * Tiny PNG was used to compress images. https://tinypng.com/
 * Website Mockup Generator: https://websitemockupgenerator.com/
+
+### Media
 
 * Images are all royalty free and taken from:
 
@@ -456,6 +477,8 @@ https://www.canva.com/templates/EADajBG9Ybc-green-and-blue-banking-corporate-tri
 
 
 ### Acknowledgments
+* I would like to thank my new mentor Derek Macauley, for taking me on at the last minute and for his advice and guidance throughout the project.
+* I would also like to thank my friends and family for helping me test the site.
 
 [Back to top](#table-of-contents)
 ___
