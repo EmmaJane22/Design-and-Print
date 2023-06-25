@@ -77,7 +77,7 @@ The wireframes for the project were created using Balsamiq.
 * Base Template - this contains a header and a footer which are displayed throughout the site.
 ![Base Template Wireframe](documentation/wireframes/base_template.png)
 
-* Home Page
+* Home Page - The home page features an eye-catching image and a link to go directly to the bespoke order page. The nav bars are responsive on different size devices. The search feature searches through the title and the description of the products in the database and returns any products that match. There is a top nav bar that features drop-down menus to enable the user to navigate the different pages of the site, and to display only certain categories of product from the database. The site title enables the user to redirect to the Home page so they never have to use the browser's back button to navigate. 
 
 ![Home Page Wireframe](documentation/wireframes/home_page.png)
 
