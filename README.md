@@ -123,6 +123,9 @@ The relational database ElephantSQL was used for this project. The following dat
 * Review - stores customer reviews.
 * Bespoke orders - stores unique custom orders.
 
+The following schema was created with DbSchema: Database Diagram Designer & Management Tool.
+
+![Database Schema](documentation/images/database.png)
 
 [Back to top](#table-of-contents)
 ___
@@ -166,7 +169,7 @@ The wireframes for the project were created using Balsamiq.
 
 * Product Detail (Admin View) - This page is the same as the product detail page, but is only displayed to logged in Admin users. It features edit and delete buttons to allow the admin to edit and delete a product from the database.
 
-  ![Product Detail Page Admin View Wireframe](documentation/wireframes/product_edit_admin.png)
+![Product Detail Page Admin View Wireframe](documentation/wireframes/product_edit_admin.png)
 
 * Bag Page – This page displays an image of the item, and the product details. The user is then able to select the ‘checkout’ button to complete their purchase or to ‘keeping shopping’ if they would prefer to make further additions. This ensures they do not need to use the browser’s back button to navigate the site. 
 
@@ -248,11 +251,31 @@ Ideas for future implementation include:
 
 * Order views on mobile devices - at present, due to time constraints the order summary involves the user needing to do a lot of scrolling to view it. In future I would change this to be more responsive.
 
+* Social Media Logins - The ability for users to log in using a social media account.
 
 [Back to top](#table-of-contents)
 ___
 
 ## Technologies Used
+
+HTML5 - to create the structure of the website.
+CSS3 - to style the website.
+Bootstrap - to style the website content.
+JavaScript - to add interactivity to the website.
+Python - to build the backend of the website.
+Django - to build the website.
+Django Allauth - account management.
+Git - version control to commit and push to GitHub.
+GitPod - development environment.
+Chrome DevTools - to test responsiveness and fix bugs.
+Heroku - to deploy the website.
+Elephant SQL - the database.
+Stripe - to process the card payment functionality.
+Amazon AWS - to store the static and media files.
+Google Mail - to generate emails.
+Font Awesome - website icons.
+Google Fonts - website fonts.
+Balsamiq - for designing the wireframes.
 
 [Back to top](#table-of-contents)
 ___
@@ -260,7 +283,58 @@ ___
 ## Testing
 ### Manual Testing
 ### Validator Testing
+
+#### HTML
+W3C was used to validate the HTML on all pages of the site. It was also used to validate the CSS.
+
+![HTML validator](documentation/testing/html_validator.jpg)
+#### CSS
+
+#### Flake8
+Flake8 was used to validate the Python code. This showed several over/under indentations, some trailing whitespace, some missing empty lines and several lines that are too long. These issues were all adressed apart from the lines that are too long from migrations, and some of the other lines that are too long, which would need to be addressed in future.
+
+
+#### Lighthouse Testing
+
+I used Lighthouse in Chrome Dev Tools to run three typical reports on the website:
+
+* Mobile View
+
+Mobile Home page
+![Mobile Home page](documentation/testing/mobile_home.jpg)
+
+Mobile Sign In page
+![Mobile Sign In page](documentation/testing/mobile_sign_in.jpg)
+
+Mobile Products page
+![Mobile products page](documentation/testing/mobile_products.jpg)
+
+
+* Desktop View
+
+Desktop Home page
+![Desktop Home page](documentation/testing/desktop_home.jpg)
+
+Desktop Sign In page
+![Desktop Sign In page](documentation/testing/desktop_sign_in.jpg)
+
+Desktop Products page
+![Desktop products page](documentation/testing/desktop_products.jpg)
+
+There are a few improvments to be made on the performance on mobile and desktop views which would need to be addressed at a later date.
+
 ### Bugs
+* The Secret Key was accidentally exposed during a commit. This was recitified by generating a new Secret Key.
+
+* When trying to connect to AWS, the connection was failing when trying to collect the static files and upload them into AWS. Eventually I discovered two typos in custom_storage.py. 
+
+* The footer was not displaying at the bottom of the page when there was no body content. Making the body content 100% resolved this.
+
+* The nav bar wouldn't display towards the beginning of the project. I discovered a typo in the word class. 
+
+#### Unresolved Bugs
+* The star rating is set to a maximum value of 5 and a minimum of 1 however the rating incrementor can go beyond 5 and below 0.
+
 
 [Back to top](#table-of-contents)
 ___
@@ -278,8 +352,67 @@ ___
 ___
 
 ## Credits
+
 ### Code Used
+* The code for the gradient 'Bespoke' button on the Home page came from https://gradientbuttons.colorion.co/?utm_content=cmp-true
+ 
 ### Media
+* Tiny PNG was used to compress images. https://tinypng.com/
+* Website Mockup Generator: https://websitemockupgenerator.com/
+
+* Images are all royalty free and taken from:
+
+https://www.vecteezy.com/vector-art/1950048-realistic-yellow-notebook-with-a4-paper-set notepad
+Business card https://www.vecteezy.com/vector-art/8254460-business-card-design-template
+https://www.vecteezy.com/vector-art/692110-circle-cutout-blue-business-card-template business card
+https://www.vecteezy.com/vector-art/1893372-vector-modern-creative-and-clean-business-card-template
+https://www.vecteezy.com/vector-art/250628-abstract-stylish-wave-business-card-template-design
+
+https://www.canva.com/templates/EAFLhgVjZDo-black-white-simple-real-estate-listing-business-card/
+https://www.canva.com/templates/EAFgbWSHdks-red-black-dynamic-gym-trainer-business-card/
+https://www.canva.com/templates/EAFQHkE0bec-red-black-creative-modern-business-card/
+https://www.canva.com/templates/EAFGMTVbLYU-professional-business-card/
+
+Notepads: 
+https://www.vecteezy.com/vector-art/23165690-spiral-binder-notebook-vector-mockup-template
+https://www.vecteezy.com/vector-art/1977680-set-of-realistic-notebooks-and-pencil-vector-illustration
+https://www.vecteezy.com/vector-art/3231641-notepads-with-empty-lined-and-checkered-paper
+
+Calendars
+https://www.vecteezy.com/vector-art/4609884-one-page-2022-calendar-design-template-editable-file
+https://www.vecteezy.com/vector-art/3044536-set-desk-calendar-2022-template-design-set-of-12-months
+https://www.vecteezy.com/vector-art/94968-2016-calendar
+https://www.vecteezy.com/vector-art/16363072-2023-calendar-design-with-holiday-2023-calendar-design-template-calendar-2023-calendar-design
+
+https://www.canva.com/templates/EADahxMOCWc-colorful-illustrated-weekly-calendar/
+https://www.canva.com/templates/EAFLbdj0EXc-pink-simple-customizable-october-2022-calendar/
+https://www.canva.com/templates/EAFRhP7wQQw-green-creative-weekly-calendar/
+
+Stickers
+https://www.canva.com/templates/EAFcYwotyqU-black-and-white-neutral-hand-made-circle-sticker/
+https://www.canva.com/templates/EAFVbMJdIso-white-minimalist-aesthetic-thank-you-circle-sticker/
+https://www.canva.com/templates/EAFXOUNUcPA-teal-and-white-simple-cupcake-business-circle-sticker-label/
+https://www.canva.com/templates/EAFYHoaxixU-pink-simple-product-label-rectangle-sticker/
+https://www.canva.com/templates/EAFcfLMbwBM-pink-playful-illustration-shampoo-label/
+
+Flyers
+https://www.canva.com/templates/EAFbRy3hG0Y-project-status-report-professional-doc-in-dark-blue-light-blue-playful-abstract-style/
+https://www.canva.com/templates/EAFTecJCu-E-project-overview-doc-in-light-green-blue-vibrant-professional-style/
+https://www.canva.com/templates/EAFW3qlv8qo-press-release-doc-in-blue-pink-bold-style/
+
+Posters
+https://www.canva.com/templates/EAFGG0-jWsc-blue-futuristic-technology-poster/
+https://www.canva.com/templates/EAFMo02Phxk-blue-gradient-technology-poster/
+https://www.canva.com/templates/EAFH2p69h4g-purple-modern-future-destiny-movie-poster/
+https://www.canva.com/templates/EAFNA4Z8qps-red-beige-modern-illustration-blood-donation-poster/
+https://www.canva.com/templates/EAFb80T7RhM-grey-black-and-yellow-modern-professional-business-conference-poster/
+
+Brochures
+https://www.canva.com/templates/EAFDLsUlh6Q-yellow-modern-geometric-trifold-brochure/
+https://www.canva.com/templates/EAFa6775kjs-blue-orange-minimalist-abstract-corporate-business-trifold-brochure/
+https://www.canva.com/templates/EADajBG9Ybc-green-and-blue-banking-corporate-trifold-brochure/
+
+
 ### Acknowledgments
 
 [Back to top](#table-of-contents)
