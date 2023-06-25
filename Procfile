@@ -1,1 +1,1 @@
-web: gunicorn design_and_print.wsgi:application
+web: gunicorn design-and-print.wsgi:application
