@@ -27,7 +27,6 @@ ___
     * [Colour Scheme](#colour-scheme)
     * [Typography](#typography)
     * [Imagery](#imagery)
-    * [Base Mockup](#base-mockup)
 2. [Features](#features)
     - [Features](#features)
     - [Future Features](#future-features)
@@ -208,6 +207,18 @@ Below this is the payment input section. The user will be required to enter thei
 
 [Back to top](#table-of-contents)
 
+### Surface Plane
+
+#### **Colour Scheme**
+
+The colour scheme for the site is very neutral, in order to not disrtact from the products and page content. A dark blue is used on a white background for good contrast and accessibility. The blue background and bright image on the home page are intended to convey the clarity and quality of the business' products. White text is used on this page for high contrast to provide good accessibility. 
+
+#### **Typography**
+All fonts are from Google Fonts. I chose 'Righteous' for the logo font and headings as it is crispy and clear and has a profesional look. This has a fall-back font of cursive.
+All other text on the site uses 'Raleway' with sans-serif as a fall-back, for accessibility purposes as it is easy to read.
+
+#### **Imagery**
+The hero image on the site was chosen to convey a professional, high-quality impression due to it's vivid colours.
 
 
 ### Features
