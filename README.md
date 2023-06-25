@@ -20,7 +20,7 @@ ___
     * [Feature Planning](#feature-planning)
   * [Structure Plane](#structure-plane)
     * [User Stories](#user-stories)
-    * [Database Schema](#database-schema)
+    * [Database](#database)
   * [Skeleton Plane](#skeleton-plane)
     * [Wireframes](#wireframes)
   * [Surface Plane](#surface-plane)
@@ -29,7 +29,6 @@ ___
     * [Imagery](#imagery)
     * [Base Mockup](#base-mockup)
 2. [Features](#features)
-    - [Wireframes](#wireframes)
     - [Features](#features)
     - [Future Features](#future-features)
 3. [Technologies](#technologies)
@@ -52,7 +51,7 @@ ___
 
 #### **Project Goals**
 
-Design and Print is a e-commerce site (for educational purposes only) that allows customers to order products to be printed, place bespoke orders for printing and for the site owners to run a print business. The timing of this project fortunately occured at the same time that I had a to prepare a presentation for a job interview where, by a happy co-incidence, I was required to provide a business solution for a print service! Hence, Design and Print was born! 
+Design and Print is an e-commerce site (for educational purposes only) that allows customers to order products to be printed, place bespoke orders for printing and for the site owners to run a print business. The timing of this project fortunately occured at the same time that I had a to prepare a presentation for a job interview where, by a happy co-incidence, I was required to provide a business solution for a print service! Hence, Design and Print was born! 
 
 ### Scope Plane
 
@@ -109,13 +108,23 @@ The main features for production are:
 | 5 | Site Admin | manage bespoke requests | provide a custom service. |
 | 6 | Site Admin | manage customer reviews | remove inappropriate reviews. |
 
+#### **Database **
+
+The relational database ElephantSQL was used for this project. The following data models were used:
+* Category - stores information about the product categories.
+* Products - stores information about the products.
+* Order - stores order infomation.
+* User Profile - stores user information.
+* Review - stores customer reviews.
+* Bespoke orders - stores unique custom orders.
+
 
 [Back to top](#table-of-contents)
 ___
 
-## 2. Features
+### Skeleton Plane
 
-### Wireframes
+#### **Wireframes**
 
 The wireframes for the project were created using Balsamiq.
 
@@ -197,7 +206,7 @@ Below this is the payment input section. The user will be required to enter thei
 
 ![Add Review Page Wireframe](documentation/wireframes/add_review.png)
 
-
+[Back to top](#table-of-contents)
 
 
 
