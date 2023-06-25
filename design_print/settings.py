@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 # local host allows github to work
-ALLOWED_HOSTS = ['design-and-print-39b5c7712e63.herokuapp.com/', 'localhost', '8000-emmajane22-designandpri-5azsdwkfy41.ws-eu100.gitpod.io',
+ALLOWED_HOSTS = [ 'localhost', '8000-emmajane22-designandpri-5azsdwkfy41.ws-eu100.gitpod.io',
                     'design-and-print-39b5c7712e63.herokuapp.com']
 
 
