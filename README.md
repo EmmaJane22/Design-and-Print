@@ -27,20 +27,26 @@ ___
     * [Colour Scheme](#colour-scheme)
     * [Typography](#typography)
     * [Imagery](#imagery)
-2. [Features](#features)
-    - [Features](#features)
-    - [Future Features](#future-features)
-3. [Technologies](#technologies)
-    - [Languages](#languages)
-    - [Frameworks & Libraries](#frameworks-and-libraries)
-    - [Storage & Hosting](#storage-and-hosting)
-4. [Testing](#testing)
-5. [Deployment](#deployment)
-    - [Heroku](#heroku)
-6. [Credits](#credits)
-    - [Content](#content)
-    - [Media](#media)
-    - [Acknowledgements](#acknowledgements)
+* [Features](#features)
+    * [Features](#features)
+    * [Future Features](#future-features)
+* [Technologies Used](#technologies-used)   
+* [Testing](#testing)
+  * [Manual Testing](#manual-testing)
+  * [Validator Testing](#validator-testing)
+  * [Bugs](#bugs)
+* [Deployment](#deployment)
+  * [Cloning](#cloning)
+  * [Django](#Django)
+  * [ElephantSQL](#elephantsql)
+  * [Deployment to Heroku](#deployment-to-heroku)
+  * [Stripe](#stripe)
+  * [AWS](#aws)
+  * [Email](#email)
+* [Credits](#credits)
+  * [Code Used](#code-used)
+  * [Media](#media)
+  * [Acknowledgments](#acknowledgments)
 
 ___
 
@@ -220,81 +226,61 @@ All other text on the site uses 'Raleway' with sans-serif as a fall-back, for ac
 #### **Imagery**
 The hero image on the site was chosen to convey a professional, high-quality impression due to it's vivid colours.
 
-
-### Features
-
-#### Nav Bar
-
-#### Footer
+[Back to top](#table-of-contents)
 ___
 
-### Pages
+## Features
 
-The website consists of X pages that run from a base page:
+### General Features
 
-* pages list
+* Nav Bar - The mav bar consists of two parts: the top header which contains the account icon, the basket icon, the search bar and the site name and the main nav which inclues links to the product categories, reviews and bespoke orders. The nav bar is fully responsive on all screen sizes. On mobile view, a hamburger menu provides ease of access to the nav bar links.
 
-#### Page
+* Footer - The footer contains social media links and contact information, such as phone number, address and email address for ease of access. The footer is responsive on all screen sizes, with the footer headings being hidden on small devices.
 
-#### Page
-
-#### Page
-
-#### 404 Error Page
-___
+* Toasts - These are used to provide feedback to the user, telling them if their action has been successful or if an error has occured. This is conveyed to the user via text and colour. Toasts have a small cross for the user to dismiss them. I deliberately chose not to have them automatically dismiss so a user does not miss the message. 
 
 ### Future Features
+
 Ideas for future implementation include:
+* Defensive programming -  I had hoped to have time to implement defensive programming to prevent a user accidentally deleting an order.
 
- - 
+* Admin approval of reviews - at present customers can post a review without an admin user being able to validate it. This could lead to offensive reviews, which can be removed by admin but would be beneficial to be able to prevent them being displayed at all.  
 
-[Back to top](#table-of-contents)
-___
+* Order views on mobile devices - at present, due to time constraints the order summary involves the user needing to do a lot of scrolling to view it. In future I would change this to be more responsive.
 
-## 3. Technologies
-
-### Languages
-
-*
-
-### Frameworks & Libraries
-
-* 
-
-### Storage & Hosting
-
-* 
 
 [Back to top](#table-of-contents)
 ___
 
-## 4. Testing
-
-A separate [TEST.md](TEST.md) file has been created for the documentation of testing.
+## Technologies Used
 
 [Back to top](#table-of-contents)
 ___
 
-## 5. Deployment
-### Heroku
-
-To deploy 
-
-### Cloning the Git Hub Repository
+## Testing
+### Manual Testing
+### Validator Testing
+### Bugs
 
 [Back to top](#table-of-contents)
 ___
 
-## 6. Credits
-### Content
+## Deployment
+### Cloning
+### Django
+### ElephantSQL
+### Deployment to Heroku
+### Stripe
+### AWS
+### Email
 
-* 
+[Back to top](#table-of-contents)
+___
 
+## Credits
+### Code Used
 ### Media
-
-### Acknowledgements
-
-* Thank yous
+### Acknowledgments
 
 [Back to top](#table-of-contents)
 ___
