@@ -1,13 +1,13 @@
 # Design and Print Website - Emma Scott
 ## Milestone Project 4 - Full Stack Development
 
-![mockup image](/documentation/mockup.jpg)
+![mockup image](/documentation/wireframes/mockup.png)
 
 ## Introduction
 Design and Print is a full stack e-commerce website built using Django, Python, HTML, CSS and JavaScript. The website utilises Stripe to process payments.
 This project was created as my fourth milestone project for my Level 5 Diploma in Web Application Development with Code Institute.
 
-[View the live project here.](https:/ "View the live project here")
+[Visit Design and Print here.](https://design-and-print-39b5c7712e63.herokuapp.com/)
 
 ___
 
