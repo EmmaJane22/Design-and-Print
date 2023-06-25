@@ -2,7 +2,6 @@ import uuid
 
 from django.db import models
 from products.models import Category
-from django.conf import settings
 from profiles.models import UserProfile
 
 # Create your models here.
