@@ -282,17 +282,57 @@ ___
 
 ## Testing
 ### Manual Testing
+| User Story | As a | I want to be able to ... |  Test carried out | Test Passed? |
+| :--- | :--- | :--- | :---|
+| 1 | Customer | easily navigate the site | all links and buttons working | Yes |
+| 2 | Customer | register for an account | Multiple user accounts created. |  Yes |
+| 3 | Customer | receive an email after registration | Emsil received  |  Yes |
+| 4 | Customer | login and logout of my account | Logged in and out of multiple accounts |  Yes |
+| 5 | Customer | view my profile page  | Navigated to profile page  |  Yes |
+| 6 | Customer | view all products on the site  | Checked database that all products are displaying. |  Yes |
+| 7 | Customer | filter products by categories  | All filters tested. | Yes |
+| 8 | Customer | view detailed information about a product  | Product details displaying for each product.  |  Yes |
+| 9 | Customer | view items in my basket  | Tested on multiple accounts and various products |  Yes |
+| 10 | Customer | edit the quantity of items in my basket  | increased and decreased quanities as expected  | Yes |
+| 11 | Customer | enter my payment details easily  | Payment tested using Stripe test number  |  Yes |
+| 12 | Customer | receive confirmation of my purchases  | Payment made - toasts displaying and returning to confirmation page |  Yes |
+| 13 | Customer | place a unique, bespoke order  | Input details into order form on bespoke page  |  Yes |
+| 14 | Customer | receive a quoted price for my bespoke order  | Accept or decline the price before being commmited to purchasing it.  | Yes |
+| 15 | Customer | leave a review of the service  | Write a review  |  Yes |
+| 16 | Customer | read other customer's reviews  | Select all reviews page and have all reviews display.  | Yes |
+
+| User Story | As a | I want to be able to ... | Test carried out | Test Passed? |  
+| :--- | :--- | :--- | :---|
+| 1 | Site Admin | easily add products to the site | Add an additional product to the site |  Yes |
+| 2 | Site Admin | easily edit products | Edit the details in each input. |  Yes |
+| 3 | Site Admin | easily delete products | Delete several products |  Yes |
+| 4 | Site Admin | view the orders being made | View all orders on one page. Click on each one for full details. |  Yes |
+| 5 | Site Admin | manage bespoke requests | View custom orders to provide a quoted price |  Yes |
+| 6 | Site Admin | manage customer reviews | Remove reviews by clicking on delete. |  Yes |
+
+
 ### Validator Testing
 
 #### HTML
-W3C was used to validate the HTML on all pages of the site. It was also used to validate the CSS.
+W3C was used to validate the HTML on all pages of the site. 
 
 ![HTML validator](documentation/testing/html_validator.jpg)
+
 #### CSS
 
+The W3C CSS Validator wasused for the CSS. No issues were identified.
+
+![CSS validator](documentation/testing/css_validator.jpg)
+
 #### Flake8
+
 Flake8 was used to validate the Python code. This showed several over/under indentations, some trailing whitespace, some missing empty lines and several lines that are too long. These issues were all adressed apart from the lines that are too long from migrations, and some of the other lines that are too long, which would need to be addressed in future.
 
+#### JSHint
+The javascript code was validated using JSHint.
+The stripe_elent.js only had three advisory warnings.
+
+![JSHint validator](documentation/testing/javascript_validator.jpg)
 
 #### Lighthouse Testing
 
