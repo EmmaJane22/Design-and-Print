@@ -81,11 +81,11 @@ The wireframes for the project were created using Balsamiq.
 
 ![Home Page Wireframe](documentation/wireframes/home_page.png)
 
-* Register Page - This enables users to sign up for an account using their email address.
+* Register Page - This enables users to sign up for an account using their email address. Once they have complete this, a confirmation email is sent to their registration email address which they need to click on to complete registration.
 
 ![Register Page Wireframe](documentation/wireframes/register.png)
 
-* Login Page - The login page enables users to sign into their account with either their username. A toast message displays that the action was successful.
+* Login Page - The login page enables users to sign into their account with their username and password. A toast message displays that the action was successful.
 
 ![Login Page Wireframe](documentation/wireframes/log_in.png)
 
@@ -103,11 +103,11 @@ The wireframes for the project were created using Balsamiq.
 ![Products Page Wireframe](documentation/wireframes/products_page.png)
 
 * Product Information - This takes the user to a detailed view of a product. The page includes an image of the product and the product details: title, price, category, and rating. It also includes a quantity selector for the user to choose how many of the product they would like to purchase, and 'Add to bag' button and 'back' to products buttons. This ensures that the user does not need to use the browser ‘back’ button.
-![Product Detail Page Wireframe](documentation/wireframes/product-info.png)
+![Product Detail Page Wireframe](documentation/wireframes/product_info.png)
 
 * Product Detail (Admin View) - This page is the same as the product detail page, but is only displayed to logged in Admin users. It features edit and delete buttons to allow the admin to edit and delete a product from the database.
 
-  ![Product Detail Page Admin View Wireframe](documentation/wireframes/product-edit-admin.png)
+  ![Product Detail Page Admin View Wireframe](documentation/wireframes/product_edit_admin.png)
 
 * Bag Page – This page displays an image of the item, and the product details. The user is then able to select the ‘checkout’ button to complete their purchase or to ‘keeping shopping’ if they would prefer to make further additions. This ensures they do not need to use the browser’s back button to navigate the site. 
 
@@ -150,7 +150,7 @@ Below this is the payment input section. The user will be required to enter thei
 
 * Add a Review Page – Users can post a review of the service they have received using the form on this page. This form features a title input, a description text area and a rating which is set to a maximum of 5 and a minimum of 1.  
 
-![Add Review Page Wireframe](documentation/wireframes/add_reviews.png)
+![Add Review Page Wireframe](documentation/wireframes/add_review.png)
 
 
 
