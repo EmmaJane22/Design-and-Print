@@ -220,7 +220,7 @@ Below this is the payment input section. The user will be required to enter thei
 
 #### **Colour Scheme**
 
-The colour scheme for the site is very neutral, in order to not disrtact from the products and page content. A dark blue is used on a white background for good contrast and accessibility. The blue background and bright image on the home page are intended to convey the clarity and quality of the business' products. White text is used on this page for high contrast to provide good accessibility. 
+The colour scheme for the site is very neutral, in order to not distract from the products and page content. A dark blue is used on a white background for good contrast and accessibility. The blue background and bright image on the home page are intended to convey the clarity and quality of the business' products. White text is used on this page for high contrast to provide good accessibility. 
 
 #### **Typography**
 All fonts are from Google Fonts. I chose 'Righteous' for the logo font and headings as it is crispy and clear and has a profesional look. This has a fall-back font of cursive.
@@ -258,24 +258,24 @@ ___
 
 ## Technologies Used
 
-HTML5 - to create the structure of the website.
-CSS3 - to style the website.
-Bootstrap - to style the website content.
-JavaScript - to add interactivity to the website.
-Python - to build the backend of the website.
-Django - to build the website.
-Django Allauth - account management.
-Git - version control to commit and push to GitHub.
-GitPod - development environment.
-Chrome DevTools - to test responsiveness and fix bugs.
-Heroku - to deploy the website.
-Elephant SQL - the database.
-Stripe - to process the card payment functionality.
-Amazon AWS - to store the static and media files.
-Google Mail - to generate emails.
-Font Awesome - website icons.
-Google Fonts - website fonts.
-Balsamiq - for designing the wireframes.
+* HTML5 - to create the structure of the website.
+* CSS3 - to style the website.
+* Bootstrap - to style the website content.
+* JavaScript - to add interactivity to the website.
+* Python - to build the backend of the website.
+* Django - to build the website.
+* Django Allauth - account management.
+* Git and GitHub - version control to commit and push to GitHub.
+* GitPod - development environment.
+* Chrome DevTools - to test responsiveness and fix bugs.
+* Heroku - to deploy the website.
+* Elephant SQL - the database.
+* Stripe - to process the card payment functionality.
+* Amazon AWS - to store the static and media files.
+* Google Mail - to generate emails.
+* Font Awesome - website icons.
+* Google Fonts - website fonts.
+* Balsamiq - for designing the wireframes.
 
 [Back to top](#table-of-contents)
 ___
