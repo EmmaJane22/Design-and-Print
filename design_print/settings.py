@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-klt_fy6i!^106cot#n2x=pix42cew7z7m57x-t+hy1&7)epju*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# local host allows github to work
 ALLOWED_HOSTS = ['design-and-print.herokuapp.com', 'localhost']
 
 
