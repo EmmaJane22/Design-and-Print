@@ -251,16 +251,6 @@ footer li {
     margin: 0;
 }
 
-/*.overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: #fff;
-    z-index: -1;
-}*/ 
-
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
@@ -370,8 +360,6 @@ footer li {
 /* Tablet View - For screen size smaller than 900px */
 @media screen and (max-width: 900px) {
     body {
-        /*background: url('/media/small_print_image.png') no-repeat center center;
-        background-size: cover;*/
         height: calc(100vh - 164px);
         color: #101728;
         font-family: 'Raleway', sans-serif;
