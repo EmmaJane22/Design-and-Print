@@ -42,7 +42,6 @@ ___
   * [Deployment to Heroku](#deployment-to-heroku)
   * [Stripe](#stripe)
   * [AWS](#aws)
-  * [Email](#email)
 * [Credits](#credits)
   * [Code Used](#code-used)
   * [Media](#media)
@@ -412,6 +411,19 @@ To clone the repository:
 
 ### Django
 
+1. In the terminal enter, pip3 install 'django<4'.
+2. Then enter, django-admin startproject your project name
+3. You will see the django project folder, including settings.py and urls.py.
+4. Back to the terminal, enter touch .gitignore.
+5. In the .gitignore file enter, *.sqlite3 and *.pyc and pycache
+6. Run the project by entering python3 manage.py runserver to check it is running well. Your page should show a rocket with 'The install worked successfully! Congratulations!' below it.
+7. Back in the terminal CTRL + C to quit the server.
+8. Migrate: enter, python3 manage.py migrate.
+9. Create a superuser: enter, python3 manage.py createsuperuser. Provide username, email (or skip this by hitting enter) and password.
+10. Enter: git add . in the terminal
+11. Then: git commit -m "your commit message"
+12. Enter: git push to push the changes.
+
 
 ### ElephantSQL
 
@@ -452,8 +464,32 @@ You must have Git and the Heroku CLI installed to deploy with Git.
 11. Click on the Deploy Branch button and your app will be deployed.
 
 ### Stripe
+1. Register for a Stripe account.
+2. Go to 'Developers' on 'Dashboard'.
+3. Go to 'API Keys' to view public and secret key.
+4. In .env file add STRIPE_PUCLIC_KEY AND STRIPE_SECERET_KEY.
+5. Copy in public and secret keys from Stripe.
+6. Head to Heroku and open the app.
+7. Click on 'settings' and 'Reveal Config Vars'
+8. Add the STRIPE_PUCLIC_KEY AND STRIPE_SECERET_KEY with their keys from Stripe.
+
 ### AWS
-### Email
+1. Create a Amazon AWS account.
+2. Open S3 application and create a bucket.
+3. Select an AWS Region.
+4. Uncheck the 'Block All Public Access' setting. Click on accept that the bucket will be public.
+5. In 'Properties', go to the 'Static Website Hosting' and click 'Edit'.
+6. Turn on 'Static Website Hosting' and set index.html and errors.html values.
+7. In 'Permissions', click 'Edit' on the CORS configuration.
+8. Edit 'Bucket Policy' and generate and set configuration 'Bucket Policy'.
+9. Go to 'Access Control List' and set list object permission for everyone.
+10. Open IAM application and set up a user group.
+11. Click on 'Policies' and 'Create Policy'.
+12. Click on the JSON tab and import a pre-built Amazon policy called AmazonS3FullAccess.
+13. Click 'Review Policy', and provide name and description then 'Create Policy'.
+14. Navigate to 'Groups' then 'Permissions' and 'Add Permission' then 'Attach Policy'. Click 'Add User' and create one.
+15. Add the user to the group and download the CSV with the user's access credentials.
+16. Add the AWS code in settings.py with an environment variable called USE_AWS.
 
 [Back to top](#table-of-contents)
 ___
