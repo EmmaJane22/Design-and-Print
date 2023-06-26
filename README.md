@@ -396,10 +396,61 @@ There are a few improvments to be made on the performance on mobile and desktop 
 ___
 
 ## Deployment
+
 ### Cloning
+To clone the repository:
+
+1. Navigate to the main repository page in GitHub.
+
+2. Click the Code button, select clone with HTTPS, SSH or the GitHub CLI and copy the link.
+
+3. Open the terminal in your preferred IDE. Change the working directory to the target location for the cloned repository.
+
+4. In the terminal, type 'git clone' followed by the copied URL. 
+
+5. Install the packages from the requirements.txt file by running pip3 install -r requirements.txt in the terminal.
+
 ### Django
+
+
 ### ElephantSQL
+
+To create a database:
+
+1. Go to ElephantSQL.com and select create a new instance.
+2. Select the free database plan.
+3. Set up your plan. Give it the same name as your project.
+4. Select the region closest to you.
+5. Select review and then Create instance.
+6. Return to the ElephantSQL dashboard and click on the database instance name for this project
+7. In the URL section, copy the database URL to your clipboard
+
 ### Deployment to Heroku
+
+You must have Git and the Heroku CLI installed to deploy with Git.
+
+1. Go to Heroku and sign up if you don’t already have an account.
+2. On the dashboard view, click the New button and select Create new app.
+3. Enter your app name and select your region. 
+4. Click Create app button.
+5. Click on the deploy tab. Select the GitHub logo.
+6. You will be prompted to find your GitHub repository to connect to. Enter your repository name for your GitHub project and click on the search button.
+7. Once your GitHub repository has been found click the connect button.
+8. Before enabling the automatic deploy you will need to go to Settings then the Config Vars section.
+9. In the Config Vars section select Reveal Config Vars. Add the following values:
+* AWS_ACCESS_KEY_ID enter YOUR_AWS_ACCESS_KEY_ID
+* AWS_SECRET_ACCESS_KEY enter YOUR_AWS_SECRET_ACCESS_KEY
+* DATABASE_URL enter YOUR_POSTGRES_URL
+* EMAIL_HOST_PASS enter YOUR_EMAIL_HOST_PASS
+* EMAIL_HOST_USER enter YOUR_EMAIL_HOST_USER
+* SECRET_KEY enter YOUR_SECRET_KEY
+* STRIPE_PUBLIC_KEY enter YOUR_STRIPE_PUBLIC_KEY
+* STRIPE_SECRET_KEY enter YOUR_STRIPE_SECRET_KEY
+* STRIPE_WH_SECRET enter YOUR_STRIPE_WH_SECRET
+* USE_AWS enter TRUE
+10. Go back to the Deployment section and scroll down to the Automatic Deploy section. Select the Automatic Deploy button.
+11. Click on the Deploy Branch button and your app will be deployed.
+
 ### Stripe
 ### AWS
 ### Email
