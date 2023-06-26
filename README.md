@@ -318,6 +318,12 @@ The following testing was carried out:
 | 22 | Site Admin | manage bespoke requests | View custom orders to provide a quoted price |  Yes |
 | 23 | Site Admin | manage customer reviews | Remove reviews by clicking on delete. |  Yes |
 
+#### Stripe
+The following test card details were used for testing Stripe:
+* Card Number: 4242 4242 4242 4242
+* Date: 0424
+* CVC: 242
+* Postcode: 42424
 
 ### Validator Testing
 
